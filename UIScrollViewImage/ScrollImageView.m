@@ -7,6 +7,7 @@
 //
 
 #import "ScrollImageView.h"
+#import "UIImageView+WebCache.h"
 
 typedef enum : NSUInteger {
     
@@ -54,11 +55,12 @@ typedef enum : NSUInteger {
         [self.scrollView addSubview:button];
         
         UIImageView *imageView        = [[UIImageView alloc] initWithFrame:button.bounds];
-        imageView.image               = [UIImage imageNamed:self.dataArray[i]];
         imageView.contentMode         = UIViewContentModeScaleAspectFill;
         imageView.layer.masksToBounds = YES;
         [button addSubview:imageView];
         
+        id <ScrollViewImageProtocol> data = self.dataArray[i];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:[data loadImageInfo]]];
     }
     
     self.scrollView.contentSize = CGSizeMake(width * self.dataArray.count, height);

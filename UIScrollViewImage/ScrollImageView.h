@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScrollViewImageProtocol.h"
 
 @class ScrollImageView;
 
@@ -23,7 +24,9 @@
 /**
  *  放入图片数据
  */
-@property (nonatomic, strong) NSArray *dataArray;
+//@property (nonatomic, strong) NSArray *dataArray;
+
+@property (nonatomic, strong) NSArray <ScrollViewImageProtocol> *dataArray;
 
 /**
  *  设置界面
