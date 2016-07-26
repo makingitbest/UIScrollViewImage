@@ -25,6 +25,7 @@
 		404CCCA51D4617B000F5D088 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CCC931D4617B000F5D088 /* UIImageView+HighlightedWebCache.m */; };
 		404CCCA61D4617B000F5D088 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CCC951D4617B000F5D088 /* UIImageView+WebCache.m */; };
 		404CCCA71D4617B000F5D088 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CCC971D4617B000F5D088 /* UIView+WebCacheOperation.m */; };
+		404CCD081D470F3900F5D088 /* 图片加载网络设置.png in Resources */ = {isa = PBXBuildFile; fileRef = 404CCD071D470F3900F5D088 /* 图片加载网络设置.png */; };
 		40EF139B1D40A213006F28BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EF139A1D40A213006F28BD /* main.m */; };
 		40EF139E1D40A213006F28BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EF139D1D40A213006F28BD /* AppDelegate.m */; };
 		40EF13A11D40A213006F28BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EF13A01D40A213006F28BD /* ViewController.m */; };
@@ -78,6 +79,7 @@
 		404CCC951D4617B000F5D088 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		404CCC961D4617B000F5D088 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		404CCC971D4617B000F5D088 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		404CCD071D470F3900F5D088 /* 图片加载网络设置.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片加载网络设置.png"; sourceTree = "<group>"; };
 		40EF13961D40A213006F28BD /* UIScrollViewImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIScrollViewImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EF139A1D40A213006F28BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40EF139C1D40A213006F28BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		40EF138D1D40A213006F28BD = {
 			isa = PBXGroup;
 			children = (
+				404CCD071D470F3900F5D088 /* 图片加载网络设置.png */,
 				40EF13981D40A213006F28BD /* UIScrollViewImage */,
 				40EF13971D40A213006F28BD /* Products */,
 			);
@@ -290,6 +293,7 @@
 				40EF13BA1D40A9AD006F28BD /* 35_2.jpg in Resources */,
 				40EF13A41D40A213006F28BD /* Main.storyboard in Resources */,
 				40EF13B91D40A9AD006F28BD /* 35_1.jpg in Resources */,
+				404CCD081D470F3900F5D088 /* 图片加载网络设置.png in Resources */,
 				40EF13BB1D40A9AD006F28BD /* 35_3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
