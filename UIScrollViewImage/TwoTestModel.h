@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ScrollViewImageProtocol.h"
 
-@interface TwoTestModel : NSObject
+@interface TwoTestModel : NSObject <ScrollViewImageProtocol>
 
 @property (nonatomic, strong) NSString *twoImageName;
 @property (nonatomic, strong) NSString *twoImageURL;

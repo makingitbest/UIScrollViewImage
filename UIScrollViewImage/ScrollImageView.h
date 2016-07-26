@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ScrollViewImageProtocol.h"
+#import "CustomImageView.h"
 
 @class ScrollImageView;
 
@@ -27,6 +28,11 @@
 //@property (nonatomic, strong) NSArray *dataArray;
 
 @property (nonatomic, strong) NSArray <ScrollViewImageProtocol> *dataArray;
+
+/**
+ *  自定制界面的模板,自定制的view都继承这个CustomImageView,并实现它的两个方法
+ */
+@property (nonatomic, strong) CustomImageView *customImageViewTemplate;
 
 /**
  *  设置界面

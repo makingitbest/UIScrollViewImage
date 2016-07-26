@@ -15,4 +15,8 @@
     return _twoImageURL;
 }
 
+- (NSString *)loadTitle {
+
+    return @"";
+}
 @end

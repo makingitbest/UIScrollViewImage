@@ -10,6 +10,7 @@
 #import "ScrollImageView.h"
 #import "OneTestModel.h"
 #import "TwoTestModel.h"
+#import "TestImageView.h"
 
 @interface ViewController () <ScrollImageViewDelegate>
 
@@ -28,12 +29,14 @@
     {
         OneTestModel *model = [OneTestModel new];
         model.oneImageURL   = @"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZHH9W8Cq6l5tNRkOVnCj59HXv0kaDZjOLpuF_oFECFFkycKteHw";
+        model.oneImageTitle = @"我就是一个标题.要改我的位置请在TestImageView中修改";
         [array addObject:model];
     }
     
     {
         OneTestModel *model = [OneTestModel new];
         model.oneImageURL   = @"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeVRVLChCd2qx2o3GkUrIRusp4_IIIHwVvjDLqSAan6-rlpskK60QnAKo";
+        model.oneImageTitle = @"想改我在这里TestImageView动我";
         [array addObject:model];
     }
     
@@ -49,9 +52,10 @@
         [array addObject:model];
     }
 
-    self.scrolView           = [[ScrollImageView alloc] initWithFrame:CGRectMake(20, 20, self.view.frame.size.width - 40, 300)];
-    self.scrolView.dataArray = array;
-    self.scrolView.delegate  = self;
+    self.scrolView                         = [[ScrollImageView alloc] initWithFrame:CGRectMake(20, 20, self.view.frame.size.width - 40, 300)];
+    self.scrolView.dataArray               = array;
+    self.scrolView.delegate                = self;
+    self.scrolView.customImageViewTemplate = [TestImageView new];
     [self.scrolView setUpAttribute];
     [self.view addSubview:self.scrolView];
 }
@@ -59,11 +63,6 @@
 - (void)scrollImageView:(ScrollImageView *)scrollView index:(NSInteger)index data:(id)data {
 
     NSLog(@"%ld,%@",index , data);
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

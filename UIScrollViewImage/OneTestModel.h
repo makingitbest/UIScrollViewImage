@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "ScrollViewImageProtocol.h"
 
-@interface OneTestModel : NSObject
+@interface OneTestModel : NSObject <ScrollViewImageProtocol>
 
 @property (nonatomic, strong) NSString *oneImageName;
 @property (nonatomic, strong) NSString *oneImageURL;
 @property (nonatomic, strong) NSString *oneImageId;
+@property (nonatomic, strong) NSString *oneImageTitle;
 
 @end

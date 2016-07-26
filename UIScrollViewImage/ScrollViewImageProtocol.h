@@ -10,6 +10,12 @@
 
 @protocol ScrollViewImageProtocol <NSObject>
 
+@required
+
 - (NSString *)loadImageInfo;
+
+@optional
+
+- (NSString *)loadTitle;
 
 @end

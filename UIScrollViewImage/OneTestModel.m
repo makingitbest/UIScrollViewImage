@@ -15,4 +15,8 @@
     return _oneImageURL;
 }
 
+- (NSString *)loadTitle {
+
+    return _oneImageTitle;
+}
 @end

@@ -38,6 +38,8 @@ typedef enum : NSUInteger {
         
         self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 100)];
         [self addSubview:self.pageControl];
+        
+        self.customImageViewTemplate = [[CustomImageView alloc] init];
     }
     return self;
 }
@@ -54,13 +56,10 @@ typedef enum : NSUInteger {
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.scrollView addSubview:button];
         
-        UIImageView *imageView        = [[UIImageView alloc] initWithFrame:button.bounds];
-        imageView.contentMode         = UIViewContentModeScaleAspectFill;
-        imageView.layer.masksToBounds = YES;
-        [button addSubview:imageView];
-        
-        id <ScrollViewImageProtocol> data = self.dataArray[i];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:[data loadImageInfo]]];
+        CustomImageView *view = [[[self.customImageViewTemplate class] alloc] initWithFrame:button.bounds];
+        [view buildSubviews];
+        [view loadData:self.dataArray[i]];
+        [button addSubview:view];
     }
     
     self.scrollView.contentSize = CGSizeMake(width * self.dataArray.count, height);
