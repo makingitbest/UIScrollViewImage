@@ -57,6 +57,7 @@ typedef enum : NSUInteger {
         [self.scrollView addSubview:button];
         
         CustomImageView *view = [[[self.customImageViewTemplate class] alloc] initWithFrame:button.bounds];
+        view.userInteractionEnabled = NO;  // 关闭CustomImageView的交互,让它响应button的点击事件
         [view buildSubviews];
         [view loadData:self.dataArray[i]];
         [button addSubview:view];
