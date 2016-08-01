@@ -28,27 +28,27 @@
     
     {
         OneTestModel *model = [OneTestModel new];
-        model.oneImageURL   = @"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZHH9W8Cq6l5tNRkOVnCj59HXv0kaDZjOLpuF_oFECFFkycKteHw";
+        model.oneImageURL   = @"http://b.hiphotos.baidu.com/image/pic/item/f703738da9773912825f6388fc198618377ae2da.jpg";
         model.oneImageTitle = @"我就是一个标题.要改我的位置请在TestImageView中修改";
         [array addObject:model];
     }
     
     {
         OneTestModel *model = [OneTestModel new];
-        model.oneImageURL   = @"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeVRVLChCd2qx2o3GkUrIRusp4_IIIHwVvjDLqSAan6-rlpskK60QnAKo";
+        model.oneImageURL   = @"http://bcs.img.r1.91.com/data/upload/2014/09_13/23/201409132316102240.jpg";
         model.oneImageTitle = @"想改我在这里TestImageView动我";
         [array addObject:model];
     }
     
     {
         TwoTestModel *model = [TwoTestModel new];
-        model.twoImageURL   = @"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV3oGbjCknqoUL8ghiYw1GKRjkSN2N3EFBlbKNRHimFtLY2Up0";
+        model.twoImageURL   = @"http://f.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=34480776be0e7bec238f0be51a1e950e/b3fb43166d224f4a2ded606a0ff790529822d156.jpg";
         [array addObject:model];
     }
 
     {
         TwoTestModel *model = [TwoTestModel new];
-        model.twoImageURL   = @"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJqPr9g0maxq1nHLZnf6avG7WOKTH3W4KspNatE4zTyBSJ7uiJsg";
+        model.twoImageURL   = @"http://b.hiphotos.baidu.com/zhidao/pic/item/3c6d55fbb2fb4316cc29db3322a4462309f7d341.jpg";
         [array addObject:model];
     }
 
